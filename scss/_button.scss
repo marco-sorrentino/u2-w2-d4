@@ -1,0 +1,31 @@
+.bottoni {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  padding: 10px 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+}
+
+.bottonNav {
+  @extend .bottoni;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+@mixin baseBottone($colorBase) {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  padding: 10px 30px;
+  color: rgb(0, 0, 0);
+  background-color: $colorBase;
+  border-radius: 30px;
+}
+
+.buttonImgLeft {
+  @include baseBottone(rgb(244, 255, 190));
+}
+
+.buttonImgRight {
+  @include baseBottone(#5dccff);
+}
